@@ -7,7 +7,7 @@ string IsPrimeNumber(int num)
     if (num == 1 || num == 2 || num == 3 || num == 5 || num == 7)
         return "Простой";
     if (num % 2 == 0)
-        return "NO";
+        return "не простой";
     for (int i = 3; i <= Math.Sqrt(num); i+=2)
     {
         if (num % i == 0)
