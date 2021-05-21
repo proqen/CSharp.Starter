@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections;
-using CSharp.Starter._005;
-using CSharp.Starter._005.Contracts;
+using CSharp.Starter.Methods;
+using CSharp.Starter.Methods.Contracts;
+
 
 namespace CSharp.Starter
 {
     class Program
     {
-        private static ILogicalAndBitwiseOperations _logicalAndBitwiseOperations;
+        public static IMethod _method;
         static void Main(string[] args)
         {
-            _logicalAndBitwiseOperations = new LogicalAndBitwiseOperations();
-            _logicalAndBitwiseOperations.ThirdTask();
+            _method = new Method();
+            _method.Calculator();
         }
     }
 }

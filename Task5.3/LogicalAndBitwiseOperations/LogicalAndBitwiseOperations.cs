@@ -1,7 +1,7 @@
 ﻿using System;
-using CSharp.Starter._005.Contracts;
+using Task5._3.LogicalAndBitwiseOperations.Contracts;
 
-namespace CSharp.Starter._005
+namespace Task5._3.LogicalAndBitwiseOperations
 {
     public class LogicalAndBitwiseOperations : ILogicalAndBitwiseOperations
     {
@@ -38,7 +38,6 @@ namespace CSharp.Starter._005
         {
             return $"3. {y /= x + 5 % z}";
         }
-#endregion
-        
+        #endregion
     }
 }

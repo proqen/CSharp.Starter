@@ -1,4 +1,4 @@
-﻿namespace CSharp.Starter._005.Contracts
+﻿namespace Task5._3.LogicalAndBitwiseOperations.Contracts
 {
     public interface ILogicalAndBitwiseOperations
     {
