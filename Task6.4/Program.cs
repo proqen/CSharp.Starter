@@ -1,11 +1,11 @@
 ﻿using System;
 
 int num = int.Parse(Console.ReadLine());
-int i = 1, numF = 1;
+int res = 1;
 
 do
 {
-    numF *=i++;
-} while (num >= i);
+    res *=num;
+} while (num-- > 1);
 
-Console.WriteLine(numF);
+Console.WriteLine(res);
