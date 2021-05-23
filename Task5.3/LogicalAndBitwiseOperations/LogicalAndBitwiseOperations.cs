@@ -8,7 +8,7 @@ namespace Task5._3.LogicalAndBitwiseOperations
         public void ThirdTask()
         {
             Console.WriteLine("Третье задание");
-            int x = 10, y = 12, z = 3;
+            int x = 5, y = 10, z = 15;
             Console.WriteLine(XF(x, y, z));
             Console.WriteLine(ZF(x, y, z));
             Console.WriteLine(Y(x, y, z));
@@ -19,24 +19,24 @@ namespace Task5._3.LogicalAndBitwiseOperations
 
         private string XF(int x, int y, int z)
         {
-            return $"1. {x += y - x++ * z}";
+            return $"1. {x += y >> x++ * z}";
         }
         private string XS(int x, int y, int z)
         {
-            return $"5. {x = y - x++ * z}";
+            return $"5. {y << x++ ^ z}";
         }
 
         private string ZF(int x, int y, int z)
         {
-            return $"2. {z = --x - y * 5}";
+            return $"2. {z = ++x & y * 5}";
         }
         private string ZS(int x, int y, int z)
         {
-            return $"4. {z = x++ + y * 5}";
+            return $"4. {x++ & y * 5}";
         }
         private string Y(int x, int y, int z)
         {
-            return $"3. {y /= x + 5 % z}";
+            return $"3. {y /= x + 5 | z}";
         }
         #endregion
     }
